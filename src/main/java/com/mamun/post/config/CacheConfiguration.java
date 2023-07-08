@@ -38,6 +38,7 @@ public class CacheConfiguration {
         return cm -> {
             createCache(cm, com.mamun.post.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.mamun.post.repository.UserRepository.USERS_BY_EMAIL_CACHE);
+            createCache(cm, com.mamun.post.domain.Post.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
